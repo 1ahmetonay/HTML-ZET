@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html etiketler</title>
+</head>
+<body>
+    <p> <b>"p"</b> pargraf yazmak için kullanılır</p>
+
+    <p> <b>"br"</b> etiketi boşluk bırakmak için kullanılır</p>
+
+    <p> <b>"hr"</b>etiketi sayfaya boydan boya yatay çizgi çizmek için kullanılır</p> 
+     <hr>
+
+    <h1><b>"h1"</b>etiketi yazı boyutu</h1>
+    <h2><b>"h2"</b>etiketi yazı boyutu</h2>
+    <h3><b>"h3"</b>etiketi yazı boyutu</h3>
+    <h4><b>"h4"</b>etiketi yazı boyutu</h4>
+    <h5><b>"h5"</b>etiketi yazı boyutu</h5>
+    <h6><b>"h6"</b>etiketi yazı boyutu</h6>
+
+    <pre><b>"pre"</b> etiketi yazılan metnin aynen gösterilmesini sağlar </pre>
+    <hr>
+    
+    <h2  style="color:red;"> listeler</h2>
+    
+    <ol >
+        <li> "ol" sıralı listeler(ordered list)</li>
+        <li> "ul" sırasız listeler(unordered list)</li>
+        <li> "li" içerik etiketi</li>
+    </ol>
+    <ol>
+        <li>sıralı listeler</li>
+
+        <ul>
+
+        <li><b>ol</b> etiketi sayesinde oluşturulur satırın numaralandırılmasında kullanılır</li>
+        <li><b>li</b> etiketi sayesinde içerik eklenebilir</li>
+        <li>etiketin başında (ol etiketinin içerisinde)<mark>type</mark> parametresi sayesinde numaralndırmanın nasıl olacağı ayarlabilir</li>
+        <li>etiketin başında (ol etiketinin içerisinde)<mark>start</mark> parametresi sayesinde numaralandırmanın kaçtan başlanacağı ayarlanabilir</li>
+
+        </ul>
+    </ol>
+    <ol start="2"> 
+        <li>sırasız listeler</li>
+        <ul>
+            <li><b>ul</b> etiketi sayesinde oluşturulur herhangi bir numaralndırma kullanmaz verileri sıralar</li>
+            <li><b>li</b> etiketi sayesinde içerik eklenebilir</li>
+        </ul>
+    </ol>
+
+    <hr>
+    <h2 style="color: red;"> metin etiketleri</h2>
+    <ol>
+        <li><b>"mark" etiketi </b></li>
+        <ul>
+            <li>metnin arka planın aydınlatılmasına (<mark>FOSFORLU</mark>)yazmaya yarar</li>
+        </ul>
+        <li><b>"em"etiketi</b> </li>
+        <ul>
+            <li>kapsadığı metni (<em>VURGULU </em>)yazmak için kullanıllır</li>
+        </ul>
+        <li><b>"strong" etiketi</b></li>
+        <ul>
+            <li>kapsadığı metni (<STRONG>KALIN</STRONG>)yazar</li>
+        </ul>
+        <li><b> "s" etiketi</b></li>
+        <ul>
+            <li> kapsadığı metnin(<s>ÜZERİNİ ÇİZER</s>) </li>
+        </ul>
+        
+        <li><b>"time"  etiketi</b></li>
+        <ul>
+            <li>kullanıcı tarafından okunabilen zaman tarih gösterilmesi için kullanılır (<time>17:10</time>) </li>
+        </ul>
+        <li><b>"progress" etiketi</b> </li>
+        <ul>
+            <li>bir işlemin ilerlemesini göstermek için kullanılır ( zaman:<progress max="24:00" ></progress>) </li>
+            <li>progress etiketiyle birlikte "value" ve "max" parametreleri kullanılabilir</li>
+            <li>value: bulunduğu değeri ifade eder</li>
+            <li>max: alabileceği max değeri ifade eder</li>
+            <li>java scrip'le kullanımı daha yüksek performans verir</li>
+        </ul>
+        <li><b>meter etiketi</b></li>
+        <ol type="a">
+            <li><b>form parametresi:</b>ait olduğu formun numarasını sembolize eder</li>
+            <li><b>high parametresi:</b>yüksek değer</li>
+            <li><b>low parametresi:</b>düşük değer</li>
+            <li><b>max parametresi:</b>max değer</li>
+            <li><b>min parametresi:</b>min değer</li>
+            <li><b>optimum parametresi:</b>ideal değer</li>
+            <li><b>value parametresi:</b>mevcut değer</li>
+            <br>
+            <li>
+                <meter max="10" min="0" value="7" high="7.5" low="2.5" optimum="5" > 10 üzerinden 7 değeri</meter>
+            </li>
+            <br>
+        </ol>
+        <li><b>"sub" etiketi</b></li>
+        <ul>
+            <li>alt simge için kullanıllır (log<sub>10</sub>) </li>
+        </ul>
+        <li><b>"sup" etiket</b></li>
+        <ul>
+            <li>üst simge için kullanılır (x <sup>2</sup>) </li>
+        </ul>
+        <li><b>"i"  etiketi</b></li>
+        <ul>
+            <li> yazı tipini (<i>İTALİK</i>) yapar </li>
+        </ul>
+        <li><b> "b" etiketi </b></li>
+        <ul>
+            <li>kapsadığı metni (<b>KALIN</b>) yazmak için kullanılır</li>
+        </ul>
+        <li><b>"u" etiketi</b> </li>
+        <ul>
+            <li>kapsadığı metnin (<u>ALTINI ÇİZER</u>) </li>
+        </ul>
+        <li><b>"small"etiketi</b></li>
+        <ul>
+            <li>yaznın boyutunu normale göre (<small>küçük </small>) yazar </li>
+        </ul>
+        <hr>
+
+    </ol>
+    <h2 style="color: red;">tablo etiketleri</h2>
+    <ol>
+        <li><b>TABLE etiketi</b></li>
+        <ul>
+            <li>internet sayfasına herhangibir etkisi olmayacaktır</li>
+            <li><b>"border parametresi"</b>sayesinde tablonun çizgileri görünür hale getirilir kalın yada ince olması için ayarlama yapılabilir </li>
+            <li><b>"width parametresi"</b> sayesinde sayfa içerisinde kapladığı alan ayarlanabilir</li>
+        </ul>
+        <li><b>"THEAD" etiketi</b></li>
+        <ul>
+            <li>"table head"tablonun başlık kısmı</li>
+        </ul>
+        <li><b>"TBODY" etiketi</b></li>
+        <ul>
+            <li>"table body"tablonun içerik kısmı</li>
+        </ul>
+        <li><b>"TR" etiketi</b></li>
+        <ul>
+            <li>"table row" her bir tablo satırını spesifik olarak sembolize eder</li>
+        </ul>
+        <li><b>"TH" etiketi</b></li>
+        <ul>
+            <li>"table header" başlık satırı eklemekte kullanılır</li>
+        </ul>
+        <li><b>"TD" etiketi</b></li>
+        <ul>
+            <li>"table data"içerik satırı eklemekte kullanılır</li>
+            <li>"colspan"satırların birleştirlmesini sağlar</li>
+            <li>"rowspan"sütunların birleştirlmesini sağlar</li>
+        </ul>
+    </ol>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>kitap</th>
+                <th>tür</th>
+                <th>yazar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sanal ağ</td>
+                <td>james dashner</td>
+                <td>bilim kurgu</td>
+            </tr>
+            <tr>
+                <td>kaplumbağa terbiyecisi</td>
+                <td>tarihi kuırgu</td>
+                <td>osman hamdi bey</td>
+            </tr>
+            <tr>
+                <td>sineklerin tanrısı</td>
+                <td>william golding</td>
+                <td>alegorik</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+
+
+</body>
+</html>
