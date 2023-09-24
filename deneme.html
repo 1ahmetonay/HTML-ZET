@@ -12,6 +12,9 @@
     <p> <b>"br"</b> etiketi boşluk bırakmak için kullanılır</p>
 
     <p> <b>"hr"</b>etiketi sayfaya boydan boya yatay çizgi çizmek için kullanılır</p> 
+
+    <pre><b>"pre"</b> etiketi yazılan metnin aynen gösterilmesini sağlar </pre>
+
      <hr>
 
     <h1><b>"h1"</b>etiketi yazı boyutu</h1>
@@ -21,8 +24,6 @@
     <h5><b>"h5"</b>etiketi yazı boyutu</h5>
     <h6><b>"h6"</b>etiketi yazı boyutu</h6>
 
-
-    <pre><b>"pre"</b> etiketi yazılan metnin aynen gösterilmesini sağlar </pre>
     <hr>
     <img src="https://avatars.mds.yandex.net/i?id=383d7a5e7ab073a83a06633ba6f2bbc5d5f9003d-9266608-images-thumbs&n=13" alt="resim">
     <hr>
@@ -186,10 +187,67 @@
         </tbody>
     </table>
 
-    
+    <h2 style="color: red;">form etiketleri</h2>
 
-
-
+    <ol>
+        <li> <b>"form:"</b> Formu tanımlar.</li>
+        <li><b></b>"input:"Kullanıcı girişi için bir giriş alanı oluşturur.
+            <ol type="a">
+                <li><b>"Text:"</b>Kullanıcının metin girmesini sağlar.
+                    <label for="fname">Ad:</label>
+                    <input type="text" id="fname" name="fname">
+                </li>
+                <li><b>"Password:"</b>Kullanıcının bir parola girmesini sağlar.
+                     Giriş metni yıldızlar veya noktalarla maskelenir.
+                     <label for="pwd">Parola:</label>
+                     <input type="password" id="pwd" name="pwd">                     
+                </li>
+                <li><b>"Submit:"</b>Formu göndermek için bir düğme oluşturur.
+                    <input type="submit" value="Gönder">
+                </li>
+                <li><b>"Radio:"</b>Kullanıcının bir seçenek seçmesini sağlar.
+                     Birden fazla radyo düğmesi aynı isme sahipse, yalnızca bir tanesi seçilebilir.
+                     <label for="male">Erkek</label>
+                     <input type="radio" id="male" name="gender" value="male">
+                     <label for="female">Kadın</label>
+                     <input type="radio" id="female" name="gender" value="female">            
+                </li>
+                <li><b>"Checkbox:"</b>Kullanıcının birden fazla seçenek seçmesini sağlar.
+                    <label for="vehicle1">Araba</label>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Car">
+                    <label for="vehicle2">Bisiklet</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+                </li>
+                <li><b>"Number:"</b>Kullanıcının bir numara girmesini sağlar.
+                    <label for="quantity">Miktar (0 ile 100 arasında):</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="100">
+                </li>
+                <li><b>"Date:"</b>Kullanıcının bir tarih seçmesini sağlar.
+                    <label for="bday">Doğum tarihi:</label>
+                    <input type="date" id="bday" name="bday">
+                </li>
+            </ol>
+        </li>
+        <li><b>"textarea:"</b>Kullanıcı girişi için bir metin alanı oluşturur.</li>
+        <li><b>"button:"</b>Bir düğme oluşturur.</li>
+        <li><b>"select:"</b>Bir açılır liste oluşturur.</li>
+        <li><b>"option:"</b> Açılır listelerde bir seçenek tanımlar.</li>
+        <li><b>"label:"</b> Bir <b>input </b> etiketi için bir etiket tanımlar.</li>
+        <li>
+            <b>örnek kullanım</b>
+        
+            <form action="/submit_form" method="post">
+                <label for="fname">Ad:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Soyad:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="message">Mesaj:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Gönder">
+              </form>
+              
+        </li>
+    </ol>
 
 </body>
 </html>
