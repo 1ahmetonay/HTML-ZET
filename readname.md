@@ -1,4 +1,4 @@
 # deneme html
 
 ## amaç 
-html özeti 
+bu kod parçasının amacı html etiketlerini kısa özetler şeklinde kod üzerinde açıklayarak htmlnin anlaşılmasını sağlamak
